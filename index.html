@@ -22,16 +22,78 @@
     <header style="background-color: #2b2424; color: white; padding: 30px;">
       <h2 style="color: rgb(255, 255, 255); font-size: 40px">CRUSADER KING 3</h2>
       <img src="https://gepig.com/game_cover_460w/6325.jpg" 
-      alt="Portada del videojuego Crusader Kings 3" 
+      alt="Portada del videojuego Crusader Kings 3" width="700" height="200"
       title="Crusader Kings 3 videojuego de estrategia en tiempo real medieval">
       <br>
       <a href="https://www.paradoxinteractive.com/games/crusader-kings-iii/about" style="color: chocolate; font-size: 30px"> Sobre el Juego </a>
       <a href="https://store.steampowered.com/dlc/1158310/Crusader_Kings_III/" style="color: rgb(255, 0, 0); font-size: 30px"> Contenido Adicional de Pago </a>
       <a href="#Creador" style="color: chocolate; font-size: 30px"> Creador de Personaje </a>
-      <a href=https://store.steampowered.com/app/1158310/Crusader_Kings_III/  style="color: rgb(255, 0, 0); font-size: 36px; text-align: right;"> COMPRAR AHORA </a>
+      <a href=https://store.steampowered.com/app/1158310/Crusader_Kings_III/  style="color: rgb(255, 0, 0); font-size: 36px; text-align: right;"> <strong>COMPRAR AHORA</strong> </a>
     </header>
     <main>
-      <h1 id="Creador" style="color: blueviolet; font-size: 50px;">Creador de Personaje para Crusader Kings 3</h1>
+      <h1 id="Creador" style="color: blueviolet; font-size: 50px;">Creador de Personaje para <strong>Crusader Kings 3</strong></h1>
+      <p style="font-size: 20px;">Bienvenido al creador de personajes web de <strong>Crusader Kings 3</strong>. En esta plataforma podrás crear la idea de lo que será tu futuro señor feudal en este juego de Gran Estrategia medieval en tiempo real.</p>
+        <p style="font-size: 20px;">Las opciones de creación de personaje en esta plataforma són más limitadas que en el videojuego completo. Pero te servirá para dar tus primeros pasos y entender como pueden ser tus personajes en este gran videojuego.</p>
+        <p style="font-size: 20px;">Serás un <em>despótico</em> líder? Un reputado <em>sabio</em>? O un <em>seductor</em> en las cortes? La forma de gobernar de tu personaje la decides <strong>tú</strong>.</p>
+        <form action="creador_de_personaje" method="post">
+          <p>Nombre del Personaje</p>
+          <input type="text" placeholder="Nombre">
+          <p>Género</p>
+          <fieldset>
+          <label for="radio1">Masculino</label>
+          <input type="radio" id="radio1" name="gender" value="male">
+          <label for="radio2">Femenino</label>
+          <input type="radio" id="radio2" name="gender" value="female">
+        </fieldset>
+          <p><strong>Título nobiliario inicial:</strong> Elige en qué estamento empezará tu personaje. Un humilde conde, un ambicioso duque o un poderoso rey.</p>
+        </fieldset>
+          <input type="radio" id="radio1" name="rango" value="conde">
+          <label for="radio1">Conde</label>
+          <img src="https://ck3.paradoxwikis.com/images/thumb/2/26/County.png/24px-County.png" 
+      alt="corona Conde" width="30" height="30"
+      title="Corona de conde">
+          <input type="radio" id="radio2" name="rango" value="duque">
+          <label for="radio2">Duque</label>
+          <img src="https://ck3.paradoxwikis.com/images/thumb/5/5a/Duchy.png/24px-Duchy.png" 
+      alt="corona Duque" width="30" height="30"
+      title="Corona de duque">
+          <input type="radio" id="radio3" name="rango" value="rey">
+          <label for="radio2">Rey</label>
+          <img src="https://ck3.paradoxwikis.com/images/thumb/0/01/Kingdom.png/24px-Kingdom.png" 
+      alt="corona rey" width="30" height="30"
+      title="Corona de rey">
+        </fieldset>
+          <p><strong>Religión del personaje:</strong> La fé de tu personaje decide a que creencias se adscribe y ritos sagrados realiza. Las religiones vienen asociadas con unas doctrinas en las que algunos rasgos de personalidad del personaje pueden ser bien vistos o mal vistos.</p>
+          <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/04/religions-1.jpg" 
+      alt="Plegaria al cielo" width="400" height="250"
+      title="Hombre haciendo una plegaria al cielo">
+      <br>
+          <input list="Religiones" name="Religion_personaje" placeholder="Religión del personaje">
+  <datalist id="Religiones">
+    <option value="Cristianismo">
+    <option value="Islam">
+    <option value="Judaismo">
+    <option value="Hinduismo">
+    <option value="Budismo">
+    <option value="Paganismo nórdico">
+  </datalist>
+  <p><strong>Cultura del personaje:</strong> La cultura tiene relación con la lengua, moda y tradiciones. La cultura está vinculada al avance tecnológico y cada una tiene rasgos distintivos: desde unidades militares y edificios únicos o beneficios clave a ciertos estilos de vida.</p>
+  <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2024/02/ck3-chess-loading-screen.jpg" 
+      alt="Partida de ajedrez" width="400" height="250"
+      title="Personas de diferentes culturas jugando al ajedrez">
+      <br>
+  <input list="Culturas" name="cultura_personaje" placeholder="Cultura del personaje">
+  <datalist id="Culturas">
+    <option value="castellana">
+    <option value="francesa">
+    <option value="sefardí">
+    <option value="nórdica">
+    <option value="bengalí">
+    <option value="árabe">
+    <option value="persa">
+    <option value="mongola">
+  </datalist>
+        </form>
     </main>
     <footer style="background-color: #2b2424; color: white; padding: 30px;">
       <h3>Quieres informar de algún error o sugerencia? Escríbenos.</h3>
